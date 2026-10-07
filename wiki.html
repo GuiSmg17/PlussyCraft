@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki | PlussyCraft</title>
+  <meta name="description" content="Aprende a jogar no PlussyCraft: ranks, reputação, economia, eventos, missões e muito mais.">
+  <meta name="theme-color" content="#0D0E11">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Outfit:wght@600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="wiki">
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+  <div id="site-header"><noscript><p style="padding:20px;color:#fff;background:#0D0E11"><a href="index.html">Home</a> · <a href="shop.html">Loja</a> · <a href="wiki.html">Wiki</a> · <a href="staff.html">Staff</a></p></noscript></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>WIKI</h1>
+        <p>Tudo o que precisas para aprender a jogar no PlussyCraft.</p>
+      </div>
+    </section>
+
+    <section class="page-body page-body--gray">
+      <div class="container">
+        <div class="wiki-toolbar">
+          <div class="search">
+            <i data-icon="search" data-size="20"></i>
+            <label class="sr-only" for="wiki-search">Pesquisar na Wiki</label>
+            <input id="wiki-search" type="search" placeholder="Pesquisar na Wiki: regras, ranks, comandos..." autocomplete="off" spellcheck="false">
+            <button class="icon-btn search__clear" id="wiki-clear" type="button" aria-label="Limpar pesquisa" hidden><i data-icon="x" data-size="18"></i></button>
+          </div>
+          <button class="btn btn--ghost wiki__toggle" id="wiki-toggle" type="button" aria-expanded="false" aria-controls="wiki-side"><i data-icon="menu" data-size="18"></i>Categorias</button>
+        </div>
+
+        <div class="wiki">
+          <nav class="wiki__side" id="wiki-side" aria-label="Categorias da Wiki"></nav>
+          <div class="wiki__main" id="wiki-main">
+            <noscript><p>Ativa o JavaScript para ler os artigos da Wiki.</p></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/data/wiki-data.js"></script>
+  <script src="js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlussyCraft | Servidor de Minecraft</title>
+  <meta name="description" content="Entra no PlussyCraft, constrói a tua história, conquista o teu lugar e faz parte da nossa comunidade.">
+  <meta name="theme-color" content="#0D0E11">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PlussyCraft | Servidor de Minecraft">
+  <meta property="og:description" content="A tua aventura começa aqui.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Outfit:wght@600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+  <div id="site-header"><noscript><p style="padding:20px;color:#fff;background:#0D0E11">Ativa o JavaScript para ver o menu. <a href="index.html">Home</a> · <a href="shop.html">Loja</a> · <a href="wiki.html">Wiki</a> · <a href="staff.html">Staff</a></p></noscript></div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title" data-rise style="--d:0ms">PLUSSYCRAFT</h1>
+          <p class="hero__tagline" data-rise style="--d:90ms">A tua aventura começa aqui.</p>
+          <p class="hero__text" data-rise style="--d:160ms">Entra no PlussyCraft, constrói a tua história, conquista o teu lugar e faz parte da nossa comunidade.</p>
+          <div class="hero__actions" data-rise style="--d:230ms">
+            <a class="btn btn--primary btn--lg" href="#ip" data-pulse><i data-icon="play" data-size="18"></i>Jogar agora</a>
+            <a class="btn btn--ghost-light btn--lg" href="#porque-jogar">Explorar o servidor</a>
+          </div>
+
+          <div class="ip" id="ip" data-rise style="--d:300ms">
+            <div class="ip__text">
+              <span class="ip__label">IP do servidor</span>
+              <code class="ip__value" data-ip>play.plussycraft.pt</code>
+            </div>
+            <button class="btn btn--primary js-copy-ip" type="button"><i data-icon="copy" data-size="18"></i><span class="btn__label">COPIAR IP</span></button>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-rise style="--d:200ms">
+          <!-- SUBSTITUIR: coloca aqui uma captura de ecrã real do PlussyCraft (ver README.md) -->
+          <div class="shot">
+            <img src="assets/images/hero-placeholder.svg" alt="Espaço reservado para uma captura de ecrã do PlussyCraft" width="1600" height="1000">
+          </div>
+          <div class="srv" role="group" aria-label="Estado do servidor (dados de exemplo)">
+            <img class="srv__icon" src="assets/images/logo-mark.svg" alt="" width="56" height="56">
+            <div>
+              <div class="srv__row"><strong>PlussyCraft</strong><span class="srv__status"><span class="dot"></span>Online</span></div>
+              <p class="srv__motd">A tua aventura começa aqui.</p>
+              <div class="srv__meta">
+                <span><span data-stat="online">128</span>/<span data-config="maxPlayers">500</span> jogadores</span>
+                <span>Java <span data-stat="version">1.21.x</span></span>
+              </div>
+            </div>
+            <div class="ping" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTATÍSTICAS (valores em js/config.js) -->
+    <section class="stats" aria-label="Estatísticas do servidor">
+      <div class="container">
+        <div class="stats__grid" data-stats></div>
+      </div>
+    </section>
+
+    <!-- PORQUE JOGAR -->
+    <section class="section" id="porque-jogar">
+      <div class="container why">
+        <div class="why__intro">
+          <h2>Porque jogar no PlussyCraft?</h2>
+          <p>Um servidor pensado para jogares ao teu ritmo, sozinho ou com amigos.</p>
+        </div>
+        <div class="why__grid">
+          <article class="why-card">
+            <div class="why-card__icon"><i data-icon="users" data-size="24"></i></div>
+            <h3>Comunidade</h3>
+            <p>Junta-te a uma comunidade ativa e faz novas amizades.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon"><i data-icon="trending" data-size="24"></i></div>
+            <h3>Progressão</h3>
+            <p>Conquista novos ranks, desbloqueia áreas e evolui dentro do servidor.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon"><i data-icon="calendar" data-size="24"></i></div>
+            <h3>Eventos</h3>
+            <p>Participa em eventos, desafios e atividades especiais.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon"><i data-icon="coins" data-size="24"></i></div>
+            <h3>Economia</h3>
+            <p>Constrói a tua riqueza através do sistema económico do servidor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="section section--dark" id="destaques">
+      <div class="container">
+        <div class="section__head">
+          <h2>O que encontras no servidor</h2>
+          <p>As principais funcionalidades do PlussyCraft. Clica numa para saberes mais.</p>
+        </div>
+
+        <div class="bento">
+          <a class="tile tile--ranks" href="wiki.html#/a/lista-de-ranks">
+            <i data-icon="crown" data-size="28"></i>
+            <h3>Sistema de ranks</h3>
+            <p>Sobe de Agricultura Base a Magnata e desbloqueia novos produtos, áreas e melhores preços de venda.</p>
+            <div class="ladder" aria-hidden="true"><span>Base</span><span>Agricultor</span><span>Criador</span><span>Fazendeiro</span><span>Barão</span><span>Magnata</span></div>
+          </a>
+          <a class="tile tile--eco" href="wiki.html#/a/moedas-e-banco">
+            <i data-icon="coins" data-size="28"></i>
+            <h3>Economia</h3>
+            <p>Ganha moedas, monta a tua banca e negoceia com outros jogadores.</p>
+            <span class="tile__link">Ver na Wiki</span>
+          </a>
+          <a class="tile tile--events" href="wiki.html#/a/calendario-de-eventos">
+            <i data-icon="calendar" data-size="28"></i>
+            <h3>Eventos</h3>
+            <p>Torneios, caças ao tesouro e eventos sazonais com prémios.</p>
+            <span class="tile__link">Ver calendário</span>
+          </a>
+          <a class="tile tile--shop" href="shop.html">
+            <i data-icon="cart" data-size="28"></i>
+            <h3>Loja</h3>
+            <p>VIPs, ranks, kits e cosméticos para melhorares a tua experiência.</p>
+            <span class="tile__link">Ir à loja</span>
+          </a>
+          <a class="tile tile--quests" href="wiki.html#/a/missoes-diarias">
+            <i data-icon="target" data-size="28"></i>
+            <h3>Missões</h3>
+            <p>Objetivos diários e semanais com recompensas em moedas e reputação.</p>
+            <span class="tile__link">Ver missões</span>
+          </a>
+          <a class="tile tile--guilds" href="wiki.html#/a/guildas">
+            <i data-icon="flag" data-size="28"></i>
+            <h3>Comunidades e guildas</h3>
+            <p>Cria uma guilda, convida amigos e disputa o topo do ranking.</p>
+            <span class="tile__link">Saber mais</span>
+          </a>
+          <a class="tile tile--unique" href="wiki.html#/s/sistemas">
+            <i data-icon="sparkles" data-size="28"></i>
+            <h3>Sistemas exclusivos</h3>
+            <p>Funcionalidades criadas de raiz para o PlussyCraft. Descobre-as na Wiki.</p>
+            <span class="tile__link">Explorar sistemas</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO ENTRAR -->
+    <section class="section section--gray" id="como-entrar">
+      <div class="container">
+        <div class="section__head">
+          <h2>Entra em três passos</h2>
+          <p>Precisas apenas do Minecraft Java Edition.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <h3>Abre o Minecraft</h3>
+            <p>Usa a versão Java Edition <span data-stat="version">1.21.x</span>.</p>
+          </li>
+          <li class="step">
+            <h3>Adiciona o servidor</h3>
+            <p>Em Multijogador, escolhe Adicionar servidor e cola o IP <code data-ip>play.plussycraft.pt</code>.</p>
+          </li>
+          <li class="step">
+            <h3>Regista-te e joga</h3>
+            <p>No primeiro login, cria a tua palavra-passe com <code>/register</code>.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Faz parte da comunidade</h2>
+            <p>Conhece outros jogadores, acompanha os eventos e fala com a equipa no nosso Discord.</p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="#"><i data-icon="discord" data-size="20"></i>Entrar no Discord</a>
+            <a class="btn btn--ghost-light btn--lg" href="shop.html">Ver a loja</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
