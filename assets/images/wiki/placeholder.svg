@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Espaço reservado para uma imagem de ilustração">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1D2027"/>
+      <stop offset="1" stop-color="#0D0E11"/>
+    </linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g fill="#FFC61A">
+    <rect x="1150" y="130" width="50" height="50" opacity=".9"/>
+    <rect x="1200" y="180" width="50" height="50" opacity=".55"/>
+    <rect x="1100" y="180" width="50" height="50" opacity=".3"/>
+  </g>
+  <rect x="110" y="110" width="1380" height="680" rx="28" fill="none" stroke="#FFC61A" stroke-opacity=".55" stroke-width="4" stroke-dasharray="22 16"/>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" text-anchor="middle">
+    <text x="800" y="420" font-size="60" font-weight="800" fill="#FFFFFF">COLOCA AQUI UMA IMAGEM DE ILUSTRAÇÃO</text>
+    <text x="800" y="495" font-size="32" fill="#C5C9D3">Troca este ficheiro ou aponta o artigo para a tua imagem</text>
+    <text x="800" y="565" font-size="28" fill="#FFC61A">assets/images/wiki/  ·  sugestão: 1600 × 900 px</text>
+  </g>
+</svg>
